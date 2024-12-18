@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXO 1 JS</title>
+        <link rel="stylesheet" href="../assets/CSS/style.css">
+    </head>
+    <body>
+        <section id="exoone" class="exo1">
+            <h1 id="title">Exercice 7</h1>
+            <div class="container">
+                <h2 class="subtitle">Commande photocopies</h2>          
+                <p class="subsubtitle"><span>Script</span>  prend en entrée un nombre de photocopies a faire, indiquez le prix de la
+                    commande en sachant que :
+                    </br>- de 1 à 10 photocopies le prix est de 0.20€ par page
+                    </br>- de 11 à 30 photocopies le prix est de 0.15€ par page
+                    </br>- de 31 à n photocopies le prix est de 0.10€ par page</p>
+                <h3>Pseudo Code</h3>
+                <p class="subject">Début</p>
+                <p class="subject">Lire nombre_photocopies</p>
+                <p class="subject">Si nombre_photocopies ≤ 10 Alors</p>
+                <p class="subject">prix ← nombre_photocopies * 0.20</p>
+                <p class="subject">Sinon Si nombre_photocopies ≤ 30 Alors</p>
+                <p class="subject">prix ← 10 * 0.20 + (nombre_photocopies - 10) * 0.15</p>
+                <p class="subject">Sinon</p>
+                <p class="subject">prix ← 10 * 0.20 + 20 * 0.15 + (nombre_photocopies - 30) * 0.10</p>
+                <p class="subject">FinSi</p>
+                <p class="subject">Afficher "Le prix total est : " + prix</p>
+                <p class="subject">Fin</p>
+            </div>
+        <div>
+            <a class="accueil" href="../index.html">Retour accueil</a>
+        </div>
+        </section>
+        <!-- <script src="script.js" ></script> -->
+    </body>
+</html>

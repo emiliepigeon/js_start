@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO 1 JS</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
+</head>
+
+<body>
+    <section id="exoone" class="exo1">
+        <h1 id="title">Exercice 9</h1>
+        <div class="container">
+            <h2 class="subtitle">Calcul de la prime d&#39;assurance basée sur des critères</h2>
+            <p class="subsubtitle"><span>Script</span> Règles :
+                </br>Prime de base: Voiture 500€, Moto 300€, Camion 1000€.
+                </br>Majoration pour âge du véhicule : 10% si le véhicule a plus de 5 ans.
+                </br>Majoration pour kilométrage annuel : 5% si plus de 20 000 km, 15%
+                </br>si plus de 30 000km</p>
+            <h3>Pseudo Code</h3>
+            <!--Données de base-->
+            <p class="subject">type_vehicule ← "Voiture" </p><!--Peut être "Voiture", "Moto" ou "Camion"-->
+            <p class="subject">age_vehicule ← 6 </p> <!--Âge du véhicule en années-->
+            <p class="subject">kilometrage_annuel ← 25000 </p> <!--Kilométrage annuel-->
+            <p class="subject">prime ← 0 </p> <!--Initialisation de la prime de basel-->
+            <!--Définition de la prime de base selon le type de véhicule-->
+            <p class="subject">Si type_vehicule = "Voiture" Alors</p>
+            <p class="subject">prime ← 500</p>
+            <p class="subject">Sinon Si type_vehicule = "Moto" Alors</p>
+            <p class="subject">prime ← 300</p>
+            <p class="subject">Sinon Si type_vehicule = "Camion" Alors</p>
+            <p class="subject">prime ← 1000</p>
+            <p class="subject">FinSi</p>
+            <!--Majoration pour l'âge du véhicule-->
+            <p class="subject">Si age_vehicule > 5 Alors</p>
+            <p class="subject">prime ← prime * 1.10</p><!-- +10%-->
+            <p class="subject">FinSi</p>
+            <!--Majoration pour le kilométrage annuel-->
+            <p class="subject">Si kilometrage_annuel > 30000 Alors</p>
+            <p class="subject">prime ← prime * 1.15<!-- +15%-->
+            <p class="subject">Sinon Si kilometrage_annuel > 20000 Alors</p>
+            <p class="subject">prime ← prime * 1.05</p><!-- +5%-->
+            <p class="subject">FinSi</p>
+            <p class="subject">Afficher "Prime d'assurance :", prime</p>
+            <p class="subject">Fin</p>
+        </div>
+        <div>
+            <a class="accueil" href="../index.html">Retour accueil</a>
+        </div>
+    </section>
+    <!-- <script src="script.js" ></script> -->
+</body>
+
+</html>

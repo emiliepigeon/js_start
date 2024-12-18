@@ -1,0 +1,160 @@
+/* Reset général pour éliminer les marges par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- Style général de la page -----------------*/
+:root {
+    --primary-color: #000509;
+    --secondary-color: #6c757d;
+    --third-color: #fafbfb;
+    --fourth_color: #ff5733;
+    --font-family: Arial, sans-serif;
+}
+
+/*****************************************************************************/
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--secondary-color); /* Optionnel, pour une couleur de fond */
+}
+
+#exoone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    margin-top: 2%;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    background-color: var(--third-color);
+    padding: 50px;
+}
+
+.container {
+    width: 65%;
+    /* Largeur maximale pour les deux sections */
+    margin: 0 auto;
+    /* Centre la section horizontalement */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    font-family: var(--font-family);
+    margin-top: 5px;
+}
+/******************** Style du texte *****************************/
+#title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    word-spacing: 2px;    
+}
+
+li {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: 400;
+    list-style-type: none; /* Supprime les puces de la liste pour un affichage plus propre */
+}
+
+a {
+    color: inherit;
+    /* Hérite la couleur du texte parent */
+    text-decoration: none;
+    /* Supprime le soulignement */
+}
+/********************* Style index.html *************************/
+#listexo {
+    padding-top: 15px;
+}
+
+#listexo li {
+    padding-bottom: 25px;
+}
+
+.accueil {
+    color: var(--fourth_color);
+    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+/************************ tout les exos ************************/
+
+.subject {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-family: var(--font-family);
+    font-size: 18px;
+    margin-bottom: 5%; 
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: var(--fourth_color);
+    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: 22px;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    padding-bottom: 5px;
+}
+
+.subsubtitle {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+span {
+    color: #ff5733;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/********************** exo1.html *************************/
+
+/********************** exo2.html *************************/
+
+/********************** exo3.html *************************/
+
+/********************** exo4.html *************************/
+
+/********************** exo5.html *************************/
+
+/********************** exo6.html *************************/
+
+/********************** exo7.html *************************/
+
+/********************** exo8.html *************************/
+
+/********************** exo9.html *************************/
