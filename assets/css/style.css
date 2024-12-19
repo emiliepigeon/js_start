@@ -10,7 +10,8 @@
     --primary-color: #000509;
     --secondary-color: #6c757d;
     --third-color: #fafbfb;
-    --fourth_color: #ff5733;
+    --fourth-color: #ff5733;
+    --sixth-color: #0897a5;
     --font-family: Arial, sans-serif;
 }
 
@@ -62,13 +63,18 @@ body {
     word-spacing: 2px;    
 }
 
-li {
+#listexo li {
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 2px;
     font-weight: 400;
     list-style-type: none; /* Supprime les puces de la liste pour un affichage plus propre */
+}
+
+#listexo li:hover {
+    color: var(--fourth-color);
+    font-weight: 600;
 }
 
 a {
@@ -86,8 +92,8 @@ a {
     padding-bottom: 25px;
 }
 
-.accueil {
-    color: var(--fourth_color);
+#accueil {
+    color: var(--sixth-color);
     font-weight: 800;
     font-family: var(--font-family);
     font-size: 16px;
