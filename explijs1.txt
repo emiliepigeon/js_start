@@ -1,0 +1,70 @@
+Le DOM (Document Object Model) est une représentation structurée d'une page web sous forme d'arbre1
+2
+. Voici une explication simple pour un débutant :
+
+    Représentation de la page : Le DOM transforme le code HTML d'une page web en une structure organisée que les programmes peuvent comprendre et manipuler1
+    2
+    .
+    Arbre d'objets : Chaque élément de la page (paragraphes, titres, images, etc.) devient un "nœud" dans cet arbre2
+    . Ces nœuds sont liés entre eux, reflétant la structure de la page.
+    Interface pour les développeurs : Le DOM permet aux développeurs d'accéder et de modifier le contenu, la structure et le style de la page web en utilisant des langages de programmation comme JavaScript3
+    .
+    Dynamisme : Grâce au DOM, les développeurs peuvent créer des pages web interactives. Par exemple, ils peuvent changer le texte d'un paragraphe ou ajouter de nouveaux éléments sans recharger la page1
+    Indépendance du langage : Bien que souvent utilisé avec JavaScript, le DOM peut être manipulé par d'autres langages de programmation
+
+En résumé, le DOM est comme une carte interactive de la page web que les développeurs peuvent utiliser pour rendre les sites plus dynamiques et interactifs
+
+///////////////////////////////////////////////////////////////////
+EXO 1
+La ligne de code let nombre = parseInt(prompt("Entrez un nombre :")); effectue plusieurs opérations en une seule instruction :
+
+    prompt("Entrez un nombre :") affiche une boîte de dialogue avec le message "Entrez un nombre :" et un champ de saisie pour l'utilisateur4
+    6
+    . L'utilisateur peut alors entrer une valeur.
+    La fonction prompt() renvoie la saisie de l'utilisateur sous forme de chaîne de caractères4
+    6
+    .
+    parseInt() prend cette chaîne de caractères et la convertit en un nombre entier5
+    7
+    . Si la chaîne ne peut pas être convertie en nombre, parseInt() renvoie NaN (Not a Number)5
+    .
+    Le résultat de cette conversion est stocké dans la variable nombre, déclarée avec le mot-clé let1
+    .
+
+Cette syntaxe permet donc de demander à l'utilisateur d'entrer un nombre, de convertir sa réponse en entier, et de stocker le résultat dans une variable, le tout en une seule ligne de code.
+
+/////////////////////////////////////////////
+
+EXO 3
+Ce script fait les choses suivantes :
+
+    Il utilise prompt() pour demander à l'utilisateur d'entrer un mot.
+    Il vérifie si un mot a bien été entré.
+    Si un mot est entré, il le convertit en minuscules pour ignorer la casse.
+    Il utilise une boucle pour créer une version inversée du mot.
+    Il compare le mot original avec sa version inversée.
+    Le résultat (palindrome ou non) est affiché dans la console avec console.log().
+    Si aucun mot n'est entré, un message d'erreur est affiché dans la console.
+
+Ce code permet une interaction avec l'utilisateur tout en gardant l'affichage des résultats dans la console, comme demandé.
+
+Voici une explication détaillée du script de vérification de palindrome :
+
+    Saisie utilisateur :
+    Le script commence par demander à l'utilisateur d'entrer un mot via la fonction prompt(). Cette entrée est stockée dans la variable mot.
+    Initialisation :
+    Une variable mot_inverse est créée pour stocker la version inversée du mot. Elle est initialement une chaîne vide.
+    Vérification de l'entrée :
+    Le script vérifie si l'utilisateur a effectivement entré un mot (pour éviter les erreurs si l'utilisateur annule ou ne saisit rien).
+    Traitement du mot :
+    Si un mot est entré, il est converti en minuscules avec toLowerCase() pour ignorer la casse lors de la comparaison.
+    Inversion du mot :
+    Une boucle parcourt le mot de la fin vers le début, construisant ainsi mot_inverse caractère par caractère.
+    Comparaison :
+    Le script compare mot et mot_inverse. S'ils sont identiques, le mot est un palindrome.
+    Affichage du résultat :
+    Le résultat de la comparaison est affiché dans la console, indiquant si le mot est un palindrome ou non.
+    Gestion des erreurs :
+    Si aucun mot n'est entré, un message d'erreur est affiché dans la console.
+
+Ce script démontre l'utilisation de boucles, de comparaisons de chaînes, et de manipulations de base des chaînes de caractères en JavaScript, tout en intégrant une interaction utilisateur simple.

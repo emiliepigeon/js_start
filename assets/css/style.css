@@ -99,6 +99,7 @@ a {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /************************ tout les exos ************************/
@@ -145,6 +146,12 @@ span {
     color: var(--fourth-color);
     font-weight: 800;
     text-decoration: underline;
+}
+
+#pseudocode {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .definition {
