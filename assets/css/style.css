@@ -122,7 +122,7 @@ h3 {
 }
 
 .subtitle {
-    color: var(--fourth_color);
+    color: var(--fourth-color);
     font-weight: 400;
     font-family: var(--font-family);
     font-size: 22px;
@@ -142,9 +142,28 @@ h3 {
 }
 
 span {
-    color: #ff5733;
+    color: var(--fourth-color);
     font-weight: 800;
     text-decoration: underline;
+}
+
+#reloadButton, #startButton {
+    color: var(--third-color);
+    background-color: var(--fourth-color);
+    border: none;
+    border-radius: 15px;
+    font-family: var(--font-family);
+    padding: 5px 25px 5px 25px;    
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+#result {
+    margin-bottom: 25px;
+    font-family: var(--font-family);
+    color: var(--fourth-color);
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /********************** exo1.html *************************/
