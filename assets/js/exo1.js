@@ -37,9 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (nombre % 2 === 0) {
             // Vérifie si le nombre est pair et affiche "Pair"
             resultElement.textContent = "Pair";
+            resultElement.style.color = "blue"; // Changer la couleur du texte en bleu
         } else {
             // Si le nombre est impair, affiche "Impair"
             resultElement.textContent = "Impair";
+            resultElement.style.color = "red"; // Changer la couleur du texte en orange pour indiquer une erreur
         }
     });
 

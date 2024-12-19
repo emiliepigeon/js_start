@@ -19,39 +19,41 @@
                 </br>Majoration pour kilométrage annuel : 5% si plus de 20 000 km, 15%
                 </br>si plus de 30 000km</p>
             <h3>Pseudo Code</h3>
-            <!--Données de base-->
-            <p class="subject">type_vehicule ← "Voiture" </p><!--Peut être "Voiture", "Moto" ou "Camion"-->
-            <p class="subject">age_vehicule ← 6 </p> <!--Âge du véhicule en années-->
-            <p class="subject">kilometrage_annuel ← 25000 </p> <!--Kilométrage annuel-->
-            <p class="subject">prime ← 0 </p> <!--Initialisation de la prime de basel-->
-            <!--Définition de la prime de base selon le type de véhicule-->
-            <p class="subject">Si type_vehicule = "Voiture" Alors</p>
-            <p class="subject">prime ← 500</p>
-            <p class="subject">Sinon Si type_vehicule = "Moto" Alors</p>
-            <p class="subject">prime ← 300</p>
-            <p class="subject">Sinon Si type_vehicule = "Camion" Alors</p>
-            <p class="subject">prime ← 1000</p>
-            <p class="subject">FinSi</p>
-            <!--Majoration pour l'âge du véhicule-->
-            <p class="subject">Si age_vehicule > 5 Alors</p>
-            <p class="subject">prime ← prime * 1.10</p><!-- +10%-->
-            <p class="subject">FinSi</p>
-            <!--Majoration pour le kilométrage annuel-->
-            <p class="subject">Si kilometrage_annuel > 30000 Alors</p>
-            <p class="subject">prime ← prime * 1.15<!-- +15%-->
-            <p class="subject">Sinon Si kilometrage_annuel > 20000 Alors</p>
-            <p class="subject">prime ← prime * 1.05</p><!-- +5%-->
-            <p class="subject">FinSi</p>
-            <p class="subject">Afficher "Prime d'assurance :", prime</p>
-            <p class="subject">Fin</p>
+            <div id="pseudoCode">
+                <!--Données de base-->
+                <p class="subject">type&#95;vehicule &#8592; "Voiture" </p><!--Peut être "Voiture", "Moto" ou "Camion"-->
+                <p class="subject">	&#226;ge&#95;véhicule &#8592; 6 </p> <!--Âge du véhicule en années-->
+                <p class="subject">kilometrage&#95;annuel &#8592;; 25000 </p> <!--Kilométrage annuel-->
+                <p class="subject">prime &#60; 0 </p> <!--Initialisation de la prime de basel-->
+                <!--Définition de la prime de base selon le type de véhicule-->
+                <p class="subject">Si type&#95;vehicule &#61; &#8220;Voiture&#8221; Alors</p>
+                <p class="subject">prime &#60; 500</p>
+                <p class="subject">Sinon Si type&#95;vehicule &#61; &#8220;Moto&#8221; Alors</p>
+                <p class="subject">prime &#60; 300</p>
+                <p class="subject">Sinon Si type&#95;vehicule &#61; &#8220;Camion&#8221; Alors</p>
+                <p class="subject">prime &#60; 1000</p>
+                <p class="subject">FinSi</p>
+                <!--Majoration pour l'âge du véhicule-->
+                <p class="subject">Si age&#95;vehicule &#60; 5 Alors</p>
+                <p class="subject">prime 	&#8592; prime &#42; 1.10</p><!-- +10%-->
+                <p class="subject">FinSi</p>
+                <!--Majoration pour le kilométrage annuel-->
+                <p class="subject">Si kilometrage_annuel &#62; 30000 Alors</p>
+                <p class="subject">prime &#60; prime &#42; 1.15<!-- +15%-->
+                <p class="subject">Sinon Si kilometrage&#95;annuel &#62; 20000 Alors</p>
+                <p class="subject">prime &#60; prime &#42; 1.05</p><!-- +5%-->
+                <p class="subject">FinSi</p>
+                <p class="subject">Afficher &#8220;Prime d&#39;assurance :&#8221; prime</p>
+                <p class="subject">Fin</p>
+            </div>
             <!-- <button id="startButton">Démarrer le script</button> -->
             <p id="result"></p>            
         </div>
         <div>
-            <a class="accueil" href="../index.html">Retour accueil</a>
+            <a id="accueil" href="../index.html">Retour accueil</a>
         </div>
     </section>
-    <!-- <script src="script.js" ></script> -->
+    <script src="../assets/js/exo9.js" ></script>
 </body>
 
 </html>

@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let resultElement = document.getElementById('result');
             if (resultElement) {
                 resultElement.textContent = "La moyenne est : " + moyenne.toFixed(2);
+                // TODO: rajouter des conditions pour afficher de couleurs différentes les moyennes négatives ou positives.
             }
         } else {
             // Afficher un message si aucune entrée n'a été fournie

@@ -13,27 +13,30 @@
                 <h2 class="subtitle">Trouvez le nombre le plus répété</h2>          
                 <p class="subsubtitle"><span>Script</span> prend une liste de nombres en entrée, indiquez le nombre qui se répète le plus
                     de fois dans la liste.</p>
+                <p class="definition">Liste définie : 3, 5, 2, 3, 8, 5, 3, 1, 2, 5</p>
                 <h3>Pseudo Code</h3>
-                <p class="subject">Début</p>
-                <p class="subject">Lire liste</p>
-                <p class="subject">Créer un dictionnaire compteur</p>
-                <p class="subject">Pour chaque nombre dans liste</p>
-                <p class="subject">Si nombre existe déjà dans compteur Alors</p>
-                <p class="subject">compteur[nombre] ← compteur[nombre] + 1</p>
-                <p class="subject">Sinon</p>
-                <p class="subject">compteur[nombre] ← 1</p>
-                <p class="subject">FinSi</p>
-                <p class="subject">FinPour</p>
-                <p class="subject">plus_repete ← clé avec la plus grande valeur dans compteur</p>
-                <p class="subject">Afficher "Le nombre le plus répété est : " + plus_repete</p>
-                <p class="subject">Fin</p>
+                <div id="pseudoCode">
+                    <p class="subject">Début</p>
+                    <p class="subject">Lire liste</p>
+                    <p class="subject">Créer un dictionnaire compteur</p>
+                    <p class="subject">Pour chaque nombre dans liste</p>
+                    <p class="subject">Si nombre existe déjà dans compteur Alors</p>
+                    <p class="subject">compteur&#91;nombre&#93; &#8592; compteur&#91;nombre&#93; &#43; 1</p>
+                    <p class="subject">Sinon</p>
+                    <p class="subject">compteur&#91;nombre&#93; &#8592; 1</p>
+                    <p class="subject">FinSi</p>
+                    <p class="subject">FinPour</p>
+                    <p class="subject">plus&#95;repete &#8592; clé avec la plus grande valeur dans compteur</p>
+                    <p class="subject">Afficher &#8220; Le nombre le plus répété est : &#8221; &#43; plus&#95;repete</p>
+                    <p class="subject">Fin</p>
+                </div>
                 <!-- <button id="startButton">Démarrer le script</button> -->
                 <p id="result"></p>                
             </div>
         <div>
-            <a class="accueil" href="../index.html">Retour accueil</a>
+            <a id="accueil" href="../index.html">Retour accueil</a>
         </div>
         </section>
-        <!-- <script src="script.js" ></script> -->
+        <script src="../assets/js/exo5.js" ></script>
     </body>
 </html>
