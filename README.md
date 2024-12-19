@@ -15,4 +15,4 @@ git add . est utilisé pour ajouter tous les fichiers modifiés et nouveaux dans
 Il est important de noter que ces commandes ont des effets différents sur l'état de votre dépôt Git et doivent être utilisées en fonction de vos besoins spécifiques.
 
 
-EXO 9 à faire en affichage console
+EXO 9 à faire en affichage console blabla
