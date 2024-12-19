@@ -1,32 +1,24 @@
-// EXO 2 en version simple
+// Attendre que le DOM soit chargé
+document.addEventListener('DOMContentLoaded', function() {
+    // Récupérer l'élément pour afficher le résultat
+    const resultElement = document.getElementById('result');
 
-// Demande à l'utilisateur d'entrer un mot
-let mot = prompt("Entrez un mot :");
+    // Demander le mot avec un délai minimal pour permettre l'affichage de la page
+    setTimeout(function() {
+        let mot = prompt("Entrez un mot :");
+        let voyelles = "aeiouy";
+        let compteur_voyelles = 0;
 
-// Chaîne contenant toutes les voyelles à rechercher
-let voyelles = "aeiouy";
-
-// Initialisation du compteur de voyelles
-let compteur_voyelles = 0;
-
-// Vérification si l'utilisateur a bien entré un mot
-if (mot) {
-    // Boucle pour parcourir chaque lettre du mot
-    for (let i = 0; i < mot.length; i++) {
-        // Récupération de la lettre courante et conversion en minuscule
-        let lettre = mot[i].toLowerCase();
-        
-        // Vérification si la lettre est une voyelle
-        if (voyelles.includes(lettre)) {
-            // Incrémentation du compteur si c'est une voyelle
-            compteur_voyelles++;
+        if (mot) {
+            for (let i = 0; i < mot.length; i++) {
+                let lettre = mot[i].toLowerCase();
+                if (voyelles.includes(lettre)) {
+                    compteur_voyelles++;
+                }
+            }
+            resultElement.textContent = "Le mot '" + mot + "' contient " + compteur_voyelles + " voyelle(s).";
+        } else {
+            resultElement.textContent = "Aucun mot n'a été entré.";
         }
-    }
-
-    // Affichage du résultat dans la console
-    console.log("Le mot '" + mot + "' contient " + compteur_voyelles + " voyelle(s).");
-} else {
-    // Message d'erreur si aucun mot n'a été entré
-    console.log("Aucun mot n'a été entré.");
-}
-
+    }, 100); // Délai minimal de 100 ms
+});

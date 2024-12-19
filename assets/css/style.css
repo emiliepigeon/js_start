@@ -147,6 +147,15 @@ span {
     text-decoration: underline;
 }
 
+.definition {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
 #reloadButton, #startButton {
     color: var(--third-color);
     background-color: var(--fourth-color);
